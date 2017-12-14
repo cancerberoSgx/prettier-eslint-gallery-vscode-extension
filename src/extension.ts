@@ -8,17 +8,15 @@ export function activate(context: vscode.ExtensionContext) {
     let disposable = vscode.commands.registerCommand('extension.prettier-eslint-gallery', () => {
 
         let editor = vscode.window.activeTextEditor
-        let input = editor.document.getText()
-        let config = {
-            source: input,
-            style: 'standard',
-        }
+        let extensionConfig = vscode.workspace.getConfiguration('prettier-eslint-gallery')
+        let config = Object.assign({source: editor.document.getText()}, extensionConfig)
         let result = formatter(config)
-
+        debugger;
         editor.edit((editorEdit) => {
             editorEdit.replace(
-                new Range(new Position(0, 0), 
-                editor.document.lineAt(editor.document.lineCount - 1).range.end), result
+                new Range(editor.document.lineAt(0).range.start, 
+                    editor.document.lineAt(editor.document.lineCount - 1).range.end), 
+                result
             ) 
         })
     })
