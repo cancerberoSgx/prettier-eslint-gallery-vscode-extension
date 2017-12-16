@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/cancerberoSgx/prettier-eslint-gallery-vscode-extension.png?branch=master)](https://travis-ci.org/cancerberoSgx/prettier-eslint-gallery-vscode-extension)
+[![Build status](https://ci.appveyor.com/api/projects/status/yddtwcmacgfdy4n4?svg=true)](https://ci.appveyor.com/project/cancerberoSgx/prettier-eslint-gallery-vscode-extension)
 [![Dependencies](https://david-dm.org/cancerberosgx/prettier-eslint-gallery-vscode-extension.svg)](https://david-dm.org/cancerberosgx/prettier-eslint-gallery-vscode-extension)
 [![devDependencies Status](https://david-dm.org/cancerberosgx/prettier-eslint-gallery-vscode-extension/dev-status.svg)](https://david-dm.org/cancerberosgx/prettier-eslint-gallery-vscode-extension?type=dev)
 
