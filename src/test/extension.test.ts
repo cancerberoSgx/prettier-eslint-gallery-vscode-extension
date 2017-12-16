@@ -5,7 +5,8 @@ import * as myExtension from '../extension';
 
 const galleryConfig = require('../../node_modules/prettier-eslint-gallery/src/config');
 
-suite('first', () => {
+suite('settings', () => {
+
   test('settings should contain valid gallery values', () => {
     assert.equal(
       galleryConfig
@@ -14,5 +15,14 @@ suite('first', () => {
       true,
       'style in settings must be a valid gallery one',
     );
+
+    assert.equal(
+      galleryConfig
+        .getAvailableModes()
+        .indexOf(vscode.workspace.getConfiguration('prettier-eslint-gallery').mode) != 0,
+      true,
+      'mode in settings must be a valid gallery one',
+    );
   });
+
 });
