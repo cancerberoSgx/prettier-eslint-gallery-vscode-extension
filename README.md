@@ -1,6 +1,11 @@
-# prettier-eslint-gallery-vscode-extension README
+[![Build Status](https://travis-ci.org/cancerberoSgx/prettier-eslint-gallery-vscode-extension.png?branch=master)](https://travis-ci.org/cancerberoSgx/prettier-eslint-gallery-vscode-extension)
+[![Dependencies](https://david-dm.org/cancerberosgx/prettier-eslint-gallery-vscode-extension.svg)](https://david-dm.org/cancerberosgx/prettier-eslint-gallery-vscode-extension)
+[![devDependencies Status](https://david-dm.org/cancerberosgx/prettier-eslint-gallery-vscode-extension/dev-status.svg)](https://david-dm.org/cancerberosgx/prettier-eslint-gallery-vscode-extension?type=dev)
 
-Format your code using popular styleguides like airbnb, standardjs, google, facebook, etc. Based on eslint and prettier. Based on [prettier-eslint-gallery](https://github.com/cancerberoSgx/prettier-eslint-gallery)
+
+# What's this?
+
+Visual Studio Code extension to format JavaScript code using popular styleguides like airbnb, standardjs, google, facebook, etc. Based on eslint and prettier. Based on [prettier-eslint-gallery](https://github.com/cancerberoSgx/prettier-eslint-gallery)
 
 ## Installing
 

@@ -78,6 +78,6 @@
         "@types/mocha": "^2.2.42"
     },
     "dependencies": {
-        "prettier-eslint-gallery": "file:../prettier-eslint-gallery"
+        "prettier-eslint-gallery": "0.0.7"
     }
 }
