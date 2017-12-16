@@ -26,19 +26,38 @@
             "title": "TypeScript configuration",
             "properties": {
                 "prettier-eslint-gallery.style": {
-                    "type": ["string", null],
-                    "enum": ["airbnb", "eslint", "google", "fbjs", "hapi", "shoppify", "standard", "walmart"],
+                    "type": [
+                        "string",
+                        null
+                    ],
+                    "enum": [
+                        "airbnb",
+                        "eslint",
+                        "google",
+                        "fbjs",
+                        "hapi",
+                        "shoppify",
+                        "standard",
+                        "walmart"
+                    ],
                     "default": "standard",
                     "description": "One popular eslint styleguides. Leave it null if you want to use a custom eslint-config thru eslintPath"
                 },
                 "prettier-eslint-gallery.mode": {
                     "type": "string",
-                    "enum": ["default", "default_es5", "onlyEslintFix"],
+                    "enum": [
+                        "default",
+                        "default_es5",
+                        "onlyEslintFix"
+                    ],
                     "default": "default",
                     "description": "Mode"
                 },
                 "prettier-eslint-gallery.eslintPath": {
-                    "type": ["string", null],
+                    "type": [
+                        "string",
+                        null
+                    ],
                     "default": null,
                     "description": "Mode"
                 }
