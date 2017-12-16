@@ -40,7 +40,7 @@
                         "standard",
                         "walmart"
                     ],
-                    "default": "standard",
+                    "default": "airbnb",
                     "description": "One popular eslint styleguides. Leave it null if you want to use a custom eslint-config thru eslintPath"
                 },
                 "prettier-eslint-gallery.mode": {
@@ -66,8 +66,8 @@
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
+        "compile": "node ./node_modules/typescript/bin/tsc -p ./",
+        "watch": "node ./node_modules/typescript/bin/tsc -watch -p ./",
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },

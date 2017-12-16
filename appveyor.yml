@@ -3,11 +3,14 @@ environment:
   VSCODE_BUILD_VERBOSE: true
 
 install:
-  - ps: Install-Product node 9.3.0 x64
-
-build_script:
+  - ps: Install-Product node 9 x64
   - npm install
   - npm run vscode:prepublish
 
+# Post-install test scripts.
 test_script:
+  # Output useful info for debugging.
+  - node --version
+  - npm --version
+  # run tests
   - npm test
